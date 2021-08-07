@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+float PI = 3.1415; // VARIÁVEL GLOBAL
+
+int soma(int n1, int n2) // PARÂMETROS FORMAIS ()
+{
+  int s = 0; // s É UMA VARIÁVEL LOCAL
+  s = n1 + n2;
+  return s;
+}
+
+int main()
+{
+  int ss = soma(2,PI); // ss É UMA VARIÁVEL LOCAL
+
+  printf(" soma = %d \n", ss);
+
+  return 0;
+}

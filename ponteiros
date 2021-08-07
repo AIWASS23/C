@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+   int num = 5;
+   int *p;
+   p = &num;
+
+   printf(" %p %p %d \n", &p, p, *p);
+
+   return 0;
+}

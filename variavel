@@ -1,0 +1,32 @@
+variavel = espaço de memoria alocado
+onde se declara a variavel:
+- dentro de funções ( variavel local )
+- na definição das funções ( parametros formais )
+- fora de qualquer função ( variavel globais )
+
+modificadores de tipo:
+
+signed - 
+unsigned - não computa a parte negativa do tipo de dado
+long - aumentar o espaço de memoria
+short - diminuir o espaço de memoria 
+
+
+variavel local ex:
+
+int main(){
+
+int a;
+int b = 3;
+printf("%d %d", a, b);
+}
+
+parametros formais ex:
+
+float area_triangulo(int altura, int base){
+   float temporaria;
+       temporaria = (base * altura)/2;
+       return temporaria;
+}
+
+
