@@ -2,14 +2,8 @@
 #include <conio.h>
 #include <stdlib.h>
 
-//Declara a função validaData ao programa
+//Declara a funÃ§Ã£o validaData ao programa
 int ValidarData (int dia, int mes, int ano);
-
-/*
-   PROGRAMA........: Validador de Data
-   AUTOR...........: André C L de Almeida
-   E-MAIL..........: almandre4@gmail.com
-*/
 
 int main()
 {
@@ -50,14 +44,14 @@ int main()
   
 }
 
-//Essa função recebe três valores inteiros e retorna um inteiro
-//Se retorna 0 indica que a data é válida, se retorna 1 indica que a data é inválida
+//Essa funÃ§Ã£o recebe trÃªs valores inteiros e retorna um inteiro
+//Se retorna 0 indica que a data Ã© vÃ¡lida, se retorna 1 indica que a data Ã© invÃ¡lida
 int ValidarData (int dia, int mes, int ano)
 {
 int resto, tipo;
     //Verifica os meses que tem 31 dias
     if ((mes==01) || (mes==03) || (mes==05) || (mes==07) || (mes==8) || (mes==10) || (mes==12)) {
-              //Se o dia for maior que 31 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data é inválida
+              //Se o dia for maior que 31 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data Ã© invÃ¡lida
               if ((dia>31) || (dia<1) || (ano>9999) || (ano<0000)) {
                        tipo=1;
               }
@@ -67,7 +61,7 @@ int resto, tipo;
     else {
          //Verifica os meses que tem 30 dias
          if ((mes==04) || (mes==06) || (mes==9) || (mes==11)) {
-                   //Se o dia for maior que 30 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data é inválida
+                   //Se o dia for maior que 30 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data Ã© invÃ¡lida
                    if ((dia>30) || (dia<1) || (ano>9999) || (ano<0000)) {
                        tipo=1;
                    }
@@ -76,10 +70,10 @@ int resto, tipo;
          }         }
          else {
               if (mes==2) {
-                          //Se o resto for 0, isso indica que o ano é bisexto, sendo assim o mês de Fevereiro terá 29 dias
+                          //Se o resto for 0, isso indica que o ano Ã© bisexto, sendo assim o mÃªs de Fevereiro terÃ¡ 29 dias
                           resto=(ano%4);
                           if (resto==0) {
-                                        //Se o dia for maior que 29 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data é inválida
+                                        //Se o dia for maior que 29 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data Ã© invÃ¡lida
                                         if ((dia>29) || (dia<1) || (ano>9999) || (ano<0000)) {
                                            tipo=1;                                                 
                                         }
@@ -87,9 +81,9 @@ int resto, tipo;
                                              tipo=0;
                                         }
                           }
-                          //Se não for ano bisexto, o mês de Fevereiro terá 28 dias
+                          //Se nÃ£o for ano bisexto, o mÃªs de Fevereiro terÃ¡ 28 dias
                           else {
-                               //Se o dia for maior que 28 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data é inválida
+                               //Se o dia for maior que 28 OU menor que 1 OU ano maior que 9999 OU menor que 0000 a data Ã© invÃ¡lida
                                if ((dia>28) || (dia<1) || (ano>9999) || (ano<0000)) {
                                   tipo=1;
                                }
@@ -98,7 +92,7 @@ int resto, tipo;
                                }
                           }
               }
-              //Se o mês não estiver entre 1 e 12 a data é inválida
+              //Se o mÃªs nÃ£o estiver entre 1 e 12 a data Ã© invÃ¡lida
               else {
                    tipo=1;
               }
