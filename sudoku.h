@@ -1,7 +1,4 @@
-/*
-  @author: Marcos AUgusto de souza Pinto
-  @Email: Marcos_youngman@hotmail.com
-*/
+
 
 
 /*BIBLIOTECAS NECESSARIAS PARA O FUNCIONAMENTO CORRETO DO PROGRAMA.*/
