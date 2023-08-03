@@ -9,7 +9,7 @@ int main()
   printf("Tamanhos de tipos\n");
   printf("--------------------------------------------------- \n");
   printf("char = %ld, short int = %ld, int = %ld, long int = %ld \n\n",
-            sizof(char), sizeof(short int), sizeof(int), sizeof(long int)
+            sizeof(char), sizeof(short int), sizeof(int), sizeof(long int)
 );
 
 
@@ -17,16 +17,16 @@ int main()
 
   printf("Limites dos tipos inteiros em <limits.h>: \n");
   printf("-------------------------------------------------- \n");
-  printf("char int: %d até %d\n", CHAR_MIN, CHAR_MAX);
-  printf("short int: %d até %d\n", SHRT_MIN, SHRT_MAX);
-  printf("int: %d até %d\n", INT_MIN, INT_MAX);
-  printf("long int: %ld até %ld\n", LONG_MIN, LONG_MAX);
+  printf("char int: %d atï¿½ %d\n", CHAR_MIN, CHAR_MAX);
+  printf("short int: %d atï¿½ %d\n", SHRT_MIN, SHRT_MAX);
+  printf("int: %d atï¿½ %d\n", INT_MIN, INT_MAX);
+  printf("long int: %ld atï¿½ %ld\n", LONG_MIN, LONG_MAX);
 
 
   printf("Limites dos tipos reais em <float.h>: \n");
   printf("-------------------------------------------------- \n");
-  printf("float: %lf até %lf\n", -FLT_MAX, FLT_MAX);
-  printf("double: %lf até %lf\n, -DBL_MAX, DBL-MAX);
+  printf("float: %lf atï¿½ %lf\n", -FLT_MAX, FLT_MAX);
+  printf("double: %lf atï¿½ %lf\n", -DBL_MAX, DBL_MAX);
 
   return 0;
 } 

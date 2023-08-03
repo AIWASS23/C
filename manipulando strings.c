@@ -22,5 +22,7 @@ int main(){
 		printf("digite uma cadeia de caracteres");
 
 		fgets(cadeia, 30, stdin);
-		cadeia[strspn(cadeia, "\n")
+		cadeia[strspn(cadeia, "\n");
+	}
+}
 

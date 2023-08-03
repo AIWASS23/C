@@ -5,9 +5,9 @@
 
   {
    int num=atoi(argv[]);
-   argc("receba um número e o divida por 5");
-   argv[int resp=(num%5==0, num*4)]
-   argv[int resp=(num%5!=0, num*3)]
+   argc("receba um nï¿½mero e o divida por 5");
+   argv[int resp=(num%5==0, num*4)];
+   argv[int resp=(num%5!=0, num*3)];
   }
 
   pritf("resp=%d\n", resp);

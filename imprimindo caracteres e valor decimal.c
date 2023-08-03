@@ -2,9 +2,9 @@
 
 int main()
 {
-  char ch = 'A'
+  char ch = 'A';
 
-  printf("ch = %c %d\n", ch)
+  printf("ch = %c %d\n", ch);
 
   return 0;
 }

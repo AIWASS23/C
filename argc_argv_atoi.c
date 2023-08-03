@@ -9,7 +9,7 @@ int main(int argc, char*argv[])
 
   int ss = soma(num1, num2);
 
-  printf(" %d + %d = %d \n", num1, num2, ss)
+  printf(" %d + %d = %d \n", num1, num2, ss);
 
   return 0;
 }
