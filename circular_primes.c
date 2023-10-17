@@ -1,3 +1,4 @@
+/* Includes */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -18,7 +19,8 @@ int circular_prime(uint32_t i);
 int is_prime(uint32_t s);
 
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
         /* Count is 1 so we capture 2 */
         uint32_t c = 1;
 
@@ -34,7 +36,8 @@ int main(int argc, char** argv) {
 
 
 /* Primality by trial division */
-int is_prime(uint32_t s) {
+int is_prime(uint32_t s)
+{
         uint32_t res = !(s <= 2 || (s & 0x1) != 1);
 
         for(uint32_t i = 3; res && i * i <= s; i += ((res = !(s % i == 0)), 2))
@@ -44,7 +47,8 @@ int is_prime(uint32_t s) {
 }
 
 
-int circular_prime(uint32_t i) {
+int circular_prime(uint32_t i)
+{
         if(!possibly_circular(i) || !is_prime(i))
                 return 0;
 
@@ -60,7 +64,8 @@ int circular_prime(uint32_t i) {
 
 }
 
-uint32_t circulate(uint32_t i) {
+uint32_t circulate(uint32_t i)
+{
         if(i < BASE)
                 return i;
 
@@ -72,7 +77,8 @@ uint32_t circulate(uint32_t i) {
 
 
 /* A number may not be circular if it contains any even digits */
-int possibly_circular(uint32_t i) {
+int possibly_circular(uint32_t i)
+{
         for( ; (i % BASE) % 2; i /= BASE)
                 ;
 

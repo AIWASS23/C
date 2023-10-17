@@ -1,3 +1,6 @@
+
+
+
 #include <math.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -16,6 +19,15 @@ int main(int argc, char** argv)
         (void) argc;
         (void) argv;
 
+        /* Here we can map the values of each number on the di
+         *
+         * S0 = n**2;
+         * S1 = n**2 - (n - 1);
+         * S2 = n**2 - 2(n - 1);
+         * S3 = n**2 - 3(n - 1);
+         *
+         * Notably, we don't care about anything which is obviously a sqaure
+         * number for it will never be a prime. */
 
         int64_t s1, s2, s3, n;
         int64_t diag_total = 5;
